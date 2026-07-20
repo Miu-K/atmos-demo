@@ -88,8 +88,10 @@ docker compose version
 ## 2. Clone Repository
 
 ```bash
-git clone <repository-url>
-cd AtmosDemo
+mkdir atmosdemo
+cd atmosdemo
+git clone <repository-url> src
+cd src
 ```
 
 ---
@@ -99,7 +101,7 @@ cd AtmosDemo
 Copy the telemetry data from the USB storage into the `data` directory.
 
 ```bash
-cp -r /mnt/<USB_NAME>/telemetry ./data
+scp -r /path/to/telemetry/ ../data
 ```
 
 ---
