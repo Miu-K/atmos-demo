@@ -1,0 +1,47 @@
+{
+ "version": "0.2.0",
+ "configurations": [
+  {
+   "name": "Python: pytest",
+   "type": "debugpy",
+   "request": "launch",
+   "module": "pytest",
+   "args": [
+     "tests"
+   ],
+   "console": "integratedTerminal",
+   "justMyCode": true,
+   "env": {
+     "PYTHONPATH": "${workspaceFolder}/src"
+   }
+  },
+  
+  {
+    "name": "Python: Debug test_exporter.py",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "pytest",
+    "args": [
+        "${file}",
+        "-v"
+    ],
+    "console": "integratedTerminal",
+    "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+    },
+    "justMyCode": true
+  },
+
+  {
+    "name": "Run atmosdemo (script)",
+    "type": "debugpy",
+    "request": "launch",
+    "program": "${workspaceFolder}/cmd/atmosdemo.py",
+    "env": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "console": "integratedTerminal"
+  }
+]
+}
+
