@@ -228,17 +228,18 @@ If this is your first launch, complete the initial InfluxDB setup.
 
 ```text
 AtmosDemo/
-├── README.md
-├── data/
-├── cmd/
-│   ├── atmosdemo.py
-│   └── atmosdemo_ns.py
-├── pkg/
-│   ├── converter/
-│   ├── infra/
-│   ├── queue/
-│   └── usecase/
-├── tests/
-├── requirements.txt
-└── docker-compose.yml
+├── src/
+│   ├── README.md
+│   ├── cmd/
+│   │   ├── atmosdemo.py
+│   │   └── atmosdemo_ns.py
+│   ├── pkg/
+│   │   ├── converter/
+│   │   ├── infra/
+│   │   ├── queue/
+│   │   └── usecase/
+│   ├── tests/
+│   ├── requirements.txt
+│   └── docker-compose.yml
+└── data/
 ```
